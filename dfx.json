@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "nft-marketplace-backend-backend": {
+      "candid": "src/nft-marketplace-backend-backend/nft-marketplace-backend-backend.did",
+      "package": "nft-marketplace-backend-backend",
+      "type": "rust"
+    },
+    "nft-marketplace-backend-frontend": {
+      "dependencies": [
+        "nft-marketplace-backend-backend"
+      ],
+      "source": [
+        "src/nft-marketplace-backend-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "nft-marketplace-backend-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
